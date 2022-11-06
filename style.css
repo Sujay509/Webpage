@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+
+
+.searchbar{
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(43, 43, 43);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+}
+
+.topnav h2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+

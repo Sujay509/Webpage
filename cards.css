@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+/* font-family: 'Yanone Kaffeesatz', sans-serif; */
+.cards{
+    width: 300;
+    height: 250;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin:40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.box {
+    padding: 30px;
+    
+}
+
+.box button{
+    margin: 30px 0 0 0;
+    padding: 10px;
+    background-color: rgb(28, 183, 28);
+    border-radius: 5px;
+    color: white;
+    border:none;
+}
+
+.title {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+.heading h2{
+    font-family: 'Roboto', sans-serif;
+}
