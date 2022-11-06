@@ -21,7 +21,9 @@
     border-bottom: 2px solid rgb(43, 43, 43);
     outline: none;
 }
-
+.topnav input:focus{
+    border-bottom: 2px solid lightgreen;
+}
 .topnav h2{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
