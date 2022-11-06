@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+}
 
 
 
@@ -10,6 +14,12 @@
     border-left: none;
     border-right: none;
     width: 50%;
+}
+
+.topnav input{
+    border:none;
+    border-bottom: 2px solid rgb(43, 43, 43);
+    outline: none;
 }
 
 .topnav h2{
