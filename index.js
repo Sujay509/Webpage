@@ -363,7 +363,7 @@ function getCard (restaurant)  {
 //creating cards and appending them in the parent container
 function createCards(){
   const container = document.getElementById("box-container");
-  for(let i =0;i <restaurants.length;i++){
+  for(var i =0;i <restaurants.length;i++){
     container.appendChild(getCard(restaurants[i]));
   }
 }
