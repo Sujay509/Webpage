@@ -372,35 +372,23 @@ createCards();
 // search bar logic
 
 // get search bar element
-const searchInput = document.getElementById("restaurants.name");
-
-// store name elements in array-like object
-const namesFromDOM = document.getElementsByClassName("boxes");
-
-// listen for user events
-searchInput.addEventListener("keyup", (event) => {
-    const { value } = event.target;
-    
-    // get user search input converted to lowercase
-    const searchQuery = value.toLowerCase();
-    
-    for (const nameElement of namesFromDOM) {
-        // store name text and convert to lowercase
-        let name = nameElement.textContent.toLowerCase();
-        
-        // compare current name to search input
-        if (name.includes(searchQuery)) {
-            // found name matching search, display it
-            nameElement.style.display = "block";
-        } else {
-            // no match, don't display name
-            nameElement.style.display = "none";
-        }
-    }
-});
 
 //  searchbar1
 
 function searchbar(){
+  var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
 
-}
+    box = document.getElementById("box-container");
+    ul = document.getElementsByTagName("div");
+    // li = ul.getElementsByTagName("li");
+    for (i = 0; i < ul.length; i++) {
+        a = ul[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            ul[i].style.display = "";
+        } else {
+            ul[i].style.display = "none";
+        }
+}}
