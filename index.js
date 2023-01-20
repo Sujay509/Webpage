@@ -375,20 +375,112 @@ createCards();
 
 //  searchbar1
 
-function searchbar(){
+  function searchbar(){
   var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
 
     box = document.getElementById("box-container");
-    ul = document.getElementsByTagName("div");
+    // ul = document.getElementsByTagName("div");
     // li = ul.getElementsByTagName("li");
-    for (i = 0; i < ul.length; i++) {
-        a = ul[i];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            ul[i].style.display = "";
-        } else {
-            ul[i].style.display = "none";
-        }
-}}
+    console.log(filter);
+    ul = document.getElementsByClassName("cards");
+    li = document.getElementsByClassName("box");
+
+//     for (i = 0; i < ul.length; i++) {
+//         a = ul[i];
+//         txtValue = a.textContent || a.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             ul[i].style.display = "";
+//         } else {
+//             ul[i].style.display = "none";
+//         }
+// }
+
+for (i=0; i < li.length; i++ )
+{
+  title = li[i].querySelector(".heading");
+
+  if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+    ul[i].style.display = "";
+  } else {
+    ul[i].style.display = "none";
+  }
+
+}
+}
+
+
+  // searchbar2
+
+  // creating functions to use
+
+//   function setlist(results){
+//    for(const resto of results){
+//     const resultItem = document.createElement('li')
+
+//     resultItem.classList.add('result-item')
+
+//     const text = document.createTextNode(resto.name)
+//     resultItem.appendChild(text)
+
+//     list.appendChild(resultItem)
+//    }
+//     if(results.lenth===0){
+//       noResults()
+//     }
+//   }
+
+   
+  
+
+//   function clearlist(){
+//     while(list.firstChild){
+//       list.removeChild(list.firstChild)
+//     }
+//   }
+
+//   function noResults(){
+//     const error = document.createElement('li')
+
+//     error.classList.add('error-message')
+//     const text = document.createTextNode('No results found. Sorry!')
+
+//     error.appendChild(text)
+//     // appending the error to our list element
+//     list.appendChild(error)
+//   }
+
+
+
+
+//   whateverElement.addEventListener("event type", () =>{
+//     const searchInput = document.querySelector('.input')
+//   });
+
+
+//   searchInput.addEventListener("input", (e) => {
+//     //declare and assgin value to event listener
+//     let value = e.target.value
+//      // 2. check: if input exists and if input is larger than 0
+//      if (value && value.trim().length > 0){
+//       // 3. redefine 'value' to exclude white space and change input to all lowercase
+//        value = value.trim().toLowerCase()
+//       // 4. return the results only if the value of the search is included in the person's name
+//       // we need to write code (a function for filtering through our data to include the search input value)
+//       setList(restaurants.filter(resto => {
+//         return resto.name.includes(value)
+//     }))
+ 
+ 
+//     } else {
+//      noResults()
+
+//   }
+//   const clearButton = document.getElementById('clear')
+//   clearButton.addEventListener("click", () => {
+//     clearlist() 
+//   })
+
+
+// });
