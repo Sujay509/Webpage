@@ -459,28 +459,3 @@ for (i=0; i < li.length; i++ )
 //   });
 
 
-//   searchInput.addEventListener("input", (e) => {
-//     //declare and assgin value to event listener
-//     let value = e.target.value
-//      // 2. check: if input exists and if input is larger than 0
-//      if (value && value.trim().length > 0){
-//       // 3. redefine 'value' to exclude white space and change input to all lowercase
-//        value = value.trim().toLowerCase()
-//       // 4. return the results only if the value of the search is included in the person's name
-//       // we need to write code (a function for filtering through our data to include the search input value)
-//       setList(restaurants.filter(resto => {
-//         return resto.name.includes(value)
-//     }))
- 
- 
-//     } else {
-//      noResults()
-
-//   }
-//   const clearButton = document.getElementById('clear')
-//   clearButton.addEventListener("click", () => {
-//     clearlist() 
-//   })
-
-
-// });
