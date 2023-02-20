@@ -324,10 +324,10 @@ const restaurants = [
 
 
 function createElement(type,className)  {
-  const createdElement = document.createElement(type);
+  const createdElement = document.createElement(type);  // to create new element
   if(className){
 
-    createdElement.className = className;
+    createdElement.className = className; 
   }
   return createdElement;
 }
@@ -411,27 +411,7 @@ for (i=0; i < li.length; i++ )
 }
 
 
-  // searchbar2
 
-  // creating functions to use
-
-//   function setlist(results){
-//    for(const resto of results){
-//     const resultItem = document.createElement('li')
-
-//     resultItem.classList.add('result-item')
-
-//     const text = document.createTextNode(resto.name)
-//     resultItem.appendChild(text)
-
-//     list.appendChild(resultItem)
-//    }
-//     if(results.lenth===0){
-//       noResults()
-//     }
-//   }
-
-   
   
 
 //   function clearlist(){
@@ -454,8 +434,6 @@ for (i=0; i < li.length; i++ )
 
 
 
-//   whateverElement.addEventListener("event type", () =>{
-//     const searchInput = document.querySelector('.input')
-//   });
+
 
 
